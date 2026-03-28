@@ -186,16 +186,15 @@ body {
 
 .channel-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
 .channel-card {
   background: #ffffff;
   border: 1px solid #ddd;
-  padding: 28px 20px;
-  text-align: center;
-  font-weight: bold;
+  padding: 24px 20px;
+  text-align: left;
   border-radius: 12px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -203,6 +202,16 @@ body {
 .channel-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.channel-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.channel-card p {
+  color: #4b5563;
+  font-size: 0.95rem;
 }
 
 .three-col {
