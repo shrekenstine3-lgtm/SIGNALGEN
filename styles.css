@@ -18,13 +18,13 @@ body {
 }
 
 .site-header {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid #e5e7eb;
-  padding: 18px 0;
+  padding: 16px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
 }
 
 .header-wrap {
@@ -35,27 +35,58 @@ body {
   flex-wrap: wrap;
 }
 
-.logo {
-  font-size: 1.7rem;
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
   font-weight: 800;
   letter-spacing: 0.5px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.brand-text {
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  color: #111;
 }
 
 .main-nav {
   display: flex;
-  gap: 18px;
+  gap: 14px;
   flex-wrap: wrap;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  padding: 8px 10px;
+  border-radius: 999px;
 }
 
 .main-nav a {
   text-decoration: none;
   color: #111;
   font-weight: 600;
-  transition: opacity 0.2s ease;
+  padding: 8px 12px;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease, opacity 0.2s ease;
 }
 
 .main-nav a:hover {
-  opacity: 0.7;
+  background: #111;
+  color: #fff;
+  opacity: 1;
 }
 
 .header-actions {
@@ -68,7 +99,7 @@ body {
   display: inline-block;
   text-decoration: none;
   padding: 11px 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   font-weight: bold;
   transition: all 0.2s ease;
 }
@@ -131,7 +162,7 @@ body {
 
 .hero-panel {
   max-width: 980px;
-  margin: 0 auto;
+  margin: 0 auto 26px;
   background: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 18px;
@@ -161,6 +192,87 @@ body {
 .hero-panel-card p {
   color: #4b5563;
   font-size: 0.96rem;
+}
+
+.hero-dashboard {
+  max-width: 1080px;
+  margin: 0 auto;
+  background: #111827;
+  color: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 18px 50px rgba(17, 24, 39, 0.22);
+  text-align: left;
+}
+
+.hero-dashboard-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.hero-dashboard-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.dashboard-dot {
+  width: 10px;
+  height: 10px;
+  background: #34d399;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.hero-dashboard-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dashboard-pill {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #e5e7eb;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 7px 12px;
+  border-radius: 999px;
+}
+
+.hero-dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.dashboard-mini-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.dashboard-mini-card h3 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.dashboard-mini-card ul {
+  list-style: none;
+}
+
+.dashboard-mini-card li {
+  color: #d1d5db;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .section {
