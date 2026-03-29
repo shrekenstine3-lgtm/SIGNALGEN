@@ -1,879 +1,503 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background: #f3f4f6;
-  color: #111;
-  line-height: 1.6;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.site-header {
-  background: rgba(255, 255, 255, 0.96);
-  border-bottom: 1px solid #e5e7eb;
-  padding: 16px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  backdrop-filter: blur(10px);
-}
-
-.header-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-}
-
-.brand-mark {
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #111827, #1f3a5f);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.05rem;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-}
-
-.brand-text {
-  font-size: 1.45rem;
-  font-weight: 800;
-  letter-spacing: 0.3px;
-  color: #111;
-}
-
-.main-nav {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-  background: #f8fafc;
-  border: 1px solid #e5e7eb;
-  padding: 8px 10px;
-  border-radius: 999px;
-}
-
-.main-nav a {
-  text-decoration: none;
-  color: #111;
-  font-weight: 600;
-  padding: 8px 12px;
-  border-radius: 999px;
-  transition: background 0.2s ease, color 0.2s ease, opacity 0.2s ease;
-}
-
-.main-nav a:hover {
-  background: #111;
-  color: #fff;
-  opacity: 1;
-}
-
-.header-actions {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.btn {
-  display: inline-block;
-  text-decoration: none;
-  padding: 11px 20px;
-  border-radius: 10px;
-  font-weight: bold;
-  transition: all 0.2s ease;
-  border: none;
-  cursor: pointer;
-  font-size: 0.95rem;
-}
-
-.btn-solid {
-  background: #111;
-  color: #fff;
-}
-
-.btn-solid:hover {
-  transform: translateY(-1px);
-}
-
-.btn-outline {
-  border: 1px solid #111;
-  color: #111;
-  background: transparent;
-}
-
-.btn-outline:hover {
-  background: #111;
-  color: #fff;
-}
-
-.btn-light {
-  background: #fff;
-  color: #111;
-}
-
-.btn-light:hover {
-  transform: translateY(-1px);
-}
-
-.btn-outline-light {
-  border: 1px solid #fff;
-  color: #fff;
-  background: transparent;
-}
-
-.btn-outline-light:hover {
-  background: #fff;
-  color: #111;
-}
-
-.hero {
-  background: linear-gradient(to bottom, #ffffff, #eef2f7);
-  padding: 110px 0 90px;
-  text-align: center;
-}
-
-.rheo-hero {
-  background: linear-gradient(to bottom, #ffffff, #edf4ff);
-}
-
-.eyebrow {
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 16px;
-  color: #6b7280;
-}
-
-.hero h1 {
-  font-size: 3.2rem;
-  line-height: 1.15;
-  max-width: 900px;
-  margin: 0 auto 20px;
-}
-
-.hero-text {
-  max-width: 760px;
-  margin: 0 auto 30px;
-  font-size: 1.12rem;
-  color: #4b5563;
-}
-
-.hero-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
-  flex-wrap: wrap;
-  margin-bottom: 45px;
-}
-
-.hero-panel {
-  max-width: 980px;
-  margin: 0 auto 26px;
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 18px;
-  padding: 28px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
-}
-
-.hero-panel-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
-  text-align: left;
-}
-
-.hero-panel-card {
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  border-radius: 14px;
-  padding: 20px;
-}
-
-.hero-panel-card h3 {
-  font-size: 1rem;
-  margin-bottom: 8px;
-}
-
-.hero-panel-card p {
-  color: #4b5563;
-  font-size: 0.96rem;
-}
-
-.hero-dashboard {
-  max-width: 1080px;
-  margin: 0 auto;
-  background: #111827;
-  color: #fff;
-  border-radius: 20px;
-  padding: 24px;
-  box-shadow: 0 18px 50px rgba(17, 24, 39, 0.22);
-  text-align: left;
-}
-
-.hero-dashboard-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
-.hero-dashboard-title {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 700;
-  font-size: 1rem;
-}
-
-.dashboard-dot {
-  width: 10px;
-  height: 10px;
-  background: #34d399;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.hero-dashboard-actions {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.dashboard-pill {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  color: #e5e7eb;
-  font-size: 0.8rem;
-  font-weight: 700;
-  padding: 7px 12px;
-  border-radius: 999px;
-}
-
-.hero-dashboard-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 18px;
-}
-
-.dashboard-mini-card {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  padding: 20px;
-}
-
-.dashboard-mini-card h3 {
-  font-size: 1rem;
-  margin-bottom: 12px;
-}
-
-.dashboard-mini-card ul {
-  list-style: none;
-}
-
-.dashboard-mini-card li {
-  color: #d1d5db;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.stats-strip {
-  padding: 26px 0 10px;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 18px;
-}
-
-.stat-card {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 16px;
-  padding: 22px;
-  text-align: center;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-}
-
-.stat-card h3 {
-  font-size: 2rem;
-  margin-bottom: 6px;
-}
-
-.stat-card p {
-  color: #4b5563;
-}
-
-.section {
-  padding: 75px 0;
-}
-
-.alt-section {
-  background: #ffffff;
-}
-
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 14px;
-  text-align: center;
-}
-
-.section-intro {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto 35px;
-  color: #555;
-}
-
-.filter-row {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-}
-
-.filter-pill {
-  background: #fff;
-  border: 1px solid #d1d5db;
-  color: #374151;
-  padding: 8px 14px;
-  border-radius: 999px;
-  font-size: 0.88rem;
-  font-weight: 700;
-}
-
-.active-pill {
-  background: #111827;
-  color: #fff;
-  border-color: #111827;
-}
-
-.channel-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.channel-card {
-  position: relative;
-  background: #ffffff;
-  border: 1px solid #ddd;
-  padding: 20px;
-  text-align: left;
-  border-radius: 14px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
-}
-
-.channel-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
-}
-
-.selected-card {
-  border: 2px solid #111827;
-  background: linear-gradient(to bottom, #ffffff, #f8fbff);
-  box-shadow: 0 14px 30px rgba(17, 24, 39, 0.10);
-}
-
-.selected-check {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  background: #111827;
-  color: #fff;
-  font-size: 0.75rem;
-  font-weight: 700;
-  padding: 6px 10px;
-  border-radius: 999px;
-}
-
-.channel-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 14px;
-  flex-wrap: wrap;
-  padding-right: 88px;
-}
-
-.channel-badge {
-  display: inline-block;
-  background: #111;
-  color: #fff;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.4px;
-  padding: 6px 10px;
-  border-radius: 999px;
-}
-
-.channel-status {
-  display: inline-block;
-  background: #f3f4f6;
-  color: #4b5563;
-  font-size: 0.72rem;
-  font-weight: 700;
-  padding: 6px 10px;
-  border-radius: 999px;
-  border: 1px solid #e5e7eb;
-}
-
-.selected-card .channel-status {
-  background: #e8f2ff;
-  color: #0f3d78;
-  border: 1px solid #bfd6f6;
-}
-
-.channel-icon {
-  width: 46px;
-  height: 46px;
-  border-radius: 14px;
-  background: #111827;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin-bottom: 14px;
-  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.12);
-}
-
-.selected-card .channel-icon {
-  background: #0f3d78;
-}
-
-.channel-card h3 {
-  font-size: 1.08rem;
-  margin-bottom: 8px;
-}
-
-.channel-card p {
-  color: #4b5563;
-  font-size: 0.95rem;
-  margin-bottom: 18px;
-  min-height: 52px;
-}
-
-.channel-link {
-  text-decoration: none;
-  color: #111;
-  font-weight: 700;
-}
-
-.channel-link:hover {
-  opacity: 0.7;
-}
-
-.selected-link {
-  color: #0f3d78;
-}
-
-.three-col {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-}
-
-.info-card {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  padding: 25px;
-  border-radius: 12px;
-}
-
-.info-card h3 {
-  margin-bottom: 10px;
-}
-
-.widget-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-}
-
-.widget-card {
-  background: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 16px;
-  padding: 24px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
-}
-
-.widget-top {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  align-items: center;
-  margin-bottom: 14px;
-  flex-wrap: wrap;
-}
-
-.widget-card h3 {
-  font-size: 1.05rem;
-}
-
-.widget-tag {
-  background: #111827;
-  color: #fff;
-  font-size: 0.76rem;
-  font-weight: 700;
-  padding: 6px 10px;
-  border-radius: 999px;
-}
-
-.widget-card ul {
-  list-style: none;
-}
-
-.widget-card li {
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-  color: #4b5563;
-}
-
-.cta-section {
-  background: #f3f4f6;
-}
-
-.cta-box {
-  background: linear-gradient(135deg, #111827, #1f2937);
-  color: #fff;
-  border-radius: 22px;
-  padding: 36px;
-  display: flex;
-  justify-content: space-between;
-  gap: 26px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.cta-copy {
-  max-width: 700px;
-}
-
-.cta-copy h2 {
-  text-align: left;
-  margin-bottom: 12px;
-}
-
-.cta-copy p {
-  color: #d1d5db;
-}
-
-.cta-actions {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-
-.featured-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-}
-
-.featured-card {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  padding: 24px;
-  border-radius: 12px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.featured-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
-}
-
-.featured-card h3 {
-  margin-bottom: 10px;
-}
-
-.network-section {
-  background: #f3f4f6;
-}
-
-.network-box {
-  background: #111;
-  color: #fff;
-  border-radius: 18px;
-  padding: 34px;
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 28px;
-}
-
-.network-label {
-  font-size: 0.82rem;
-  letter-spacing: 2px;
-  color: #cbd5e1;
-  margin-bottom: 12px;
-  font-weight: 700;
-}
-
-.dark-label {
-  color: #6b7280;
-}
-
-.network-copy h2 {
-  text-align: left;
-  margin-bottom: 14px;
-}
-
-.network-copy p {
-  color: #d1d5db;
-}
-
-.network-points {
-  display: grid;
-  gap: 14px;
-}
-
-.network-point {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 12px;
-  padding: 16px;
-  font-weight: 600;
-}
-
-.brand-system-section {
-  background: #f3f4f6;
-}
-
-.brand-system-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-}
-
-.brand-card {
-  background: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 16px;
-  padding: 24px;
-  text-align: center;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
-}
-
-.brand-sample {
-  height: 110px;
-  border-radius: 18px;
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 18px;
-}
-
-.mark-sample {
-  background: linear-gradient(135deg, #111827, #1f3a5f);
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 800;
-}
-
-.wordmark-sample {
-  color: #111827;
-  font-size: 2rem;
-  font-weight: 800;
-  letter-spacing: 0.4px;
-}
-
-.pulse-sample span {
-  display: block;
-  width: 90px;
-  height: 4px;
-  background: linear-gradient(to right, #111827, #2563eb);
-  position: relative;
-  border-radius: 999px;
-}
-
-.pulse-sample span::before,
-.pulse-sample span::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  width: 18px;
-  height: 24px;
-  border: 4px solid #2563eb;
-  border-left: none;
-  border-right: none;
-  transform: skewX(-28deg);
-}
-
-.pulse-sample span::before {
-  left: 18px;
-}
-
-.pulse-sample span::after {
-  right: 18px;
-}
-
-.brand-card h3 {
-  margin-bottom: 10px;
-}
-
-.brand-card p {
-  color: #4b5563;
-}
-
-.early-access-section {
-  background: #ffffff;
-}
-
-.early-access-box {
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  border-radius: 22px;
-  padding: 34px;
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 28px;
-  align-items: center;
-}
-
-.early-access-copy h2 {
-  text-align: left;
-  margin-bottom: 12px;
-}
-
-.early-access-copy p {
-  color: #4b5563;
-}
-
-.early-access-form {
-  display: grid;
-  gap: 14px;
-}
-
-.early-access-form input {
-  width: 100%;
-  padding: 14px 16px;
-  border: 1px solid #d1d5db;
-  border-radius: 12px;
-  font-size: 0.95rem;
-  outline: none;
-}
-
-.early-access-form input:focus {
-  border-color: #111827;
-}
-
-.site-footer {
-  background: #0b0b0b;
-  color: #fff;
-  padding: 32px 0;
-  margin-top: 30px;
-}
-
-.footer-wrap {
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.footer-brand h3 {
-  margin-bottom: 6px;
-}
-
-.footer-brand p {
-  color: #cbd5e1;
-}
-
-.footer-links {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.footer-links a:hover {
-  opacity: 0.7;
-}
-
-@media (max-width: 900px) {
-  .network-box,
-  .early-access-box {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero {
-    padding: 90px 0 70px;
-  }
-
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .header-wrap {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .main-nav,
-  .header-actions {
-    width: 100%;
-  }
-
-  .channel-top {
-    padding-right: 0;
-  }
-
-  .selected-check {
-    position: static;
-    display: inline-block;
-    margin-bottom: 12px;
-  }
-
-  .cta-box,
-  .footer-wrap {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SignalGen | Your Network, Your Channels</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a href="#" class="brand">
+        <span class="brand-mark">S</span>
+        <span class="brand-text">SignalGen</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="#channels">Channels</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#dashboard-preview">Dashboard</a>
+        <a href="#featured">Featured</a>
+        <a href="#early-access">Early Access</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#" class="btn btn-outline">Sign In</a>
+        <a href="#early-access" class="btn btn-solid">Create Free Profile</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <p class="eyebrow">ONE NETWORK • ONE FREE PROFILE • CUSTOM CHANNELS</p>
+      <h1>Build your own signal network.</h1>
+      <p class="hero-text">
+        SignalGen gives users one free profile, a custom mix of channels,
+        and a cleaner dashboard for tracking trends, signals, tools, and opportunity.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#channels" class="btn btn-solid">Pick My Channels</a>
+        <a href="#dashboard-preview" class="btn btn-outline">Preview Dashboard</a>
+      </div>
+
+      <div class="hero-panel">
+        <div class="hero-panel-grid">
+          <div class="hero-panel-card">
+            <h3>One Free Profile</h3>
+            <p>One identity across the network with saved preferences and future personalization.</p>
+          </div>
+          <div class="hero-panel-card">
+            <h3>Custom Channel Mix</h3>
+            <p>Choose what matters most and build your own feed across lifestyle and utility.</p>
+          </div>
+          <div class="hero-panel-card">
+            <h3>Smarter Signal Flow</h3>
+            <p>See important movement, trend shifts, and opportunity signals in one place.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-dashboard">
+        <div class="hero-dashboard-top">
+          <div class="hero-dashboard-title">
+            <span class="dashboard-dot"></span>
+            <span>My Signal Dashboard</span>
+          </div>
+          <div class="hero-dashboard-actions">
+            <span class="dashboard-pill">Custom Feed</span>
+            <span class="dashboard-pill">10 Channels</span>
+            <span class="dashboard-pill">Live Signals</span>
+          </div>
+        </div>
+
+        <div class="hero-dashboard-grid">
+          <div class="dashboard-mini-card">
+            <h3>My Channels</h3>
+            <ul>
+              <li>RheoGen</li>
+              <li>JobsGen</li>
+              <li>ShoppingGen</li>
+              <li>ScienceGen</li>
+            </ul>
+          </div>
+
+          <div class="dashboard-mini-card">
+            <h3>Signal Flow</h3>
+            <ul>
+              <li>Affordability pressure rising</li>
+              <li>Hiring shift in logistics</li>
+              <li>Top dining trend this week</li>
+              <li>Verified story rating changed</li>
+            </ul>
+          </div>
+
+          <div class="dashboard-mini-card">
+            <h3>Recommended Next</h3>
+            <ul>
+              <li>Add EntertainmentGen</li>
+              <li>Follow PollingGen</li>
+              <li>Save channel order</li>
+              <li>Turn on alerts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-strip">
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <h3>10</h3>
+        <p>Current channels in the network</p>
+      </div>
+      <div class="stat-card">
+        <h3>1</h3>
+        <p>Free profile across the system</p>
+      </div>
+      <div class="stat-card">
+        <h3>24/7</h3>
+        <p>Signal flow concept for dashboard users</p>
+      </div>
+      <div class="stat-card">
+        <h3>∞</h3>
+        <p>Room to scale into more channel verticals</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="channels" class="section">
+    <div class="container">
+      <h2>Choose Your Channels</h2>
+      <p class="section-intro">
+        Start with the topics that matter most to you. Build your own signal mix.
+      </p>
+
+      <div class="filter-row">
+        <span class="filter-pill active-pill">All</span>
+        <span class="filter-pill">Core</span>
+        <span class="filter-pill">Explore</span>
+        <span class="filter-pill">Insight</span>
+        <span class="filter-pill">Lifestyle</span>
+        <span class="filter-pill">Verify</span>
+      </div>
+
+      <div class="channel-grid">
+        <div class="channel-card selected-card">
+          <div class="selected-check">✓ Added</div>
+          <div class="channel-top">
+            <span class="channel-badge">Core</span>
+            <span class="channel-status">Selected</span>
+          </div>
+          <div class="channel-icon">↗</div>
+          <h3>RheoGen</h3>
+          <p>Affordability, pressure, and economic reality.</p>
+          <a href="rheogen.html" class="channel-link selected-link">Open Channel →</a>
+        </div>
+
+        <div class="channel-card selected-card">
+          <div class="selected-check">✓ Added</div>
+          <div class="channel-top">
+            <span class="channel-badge">Core</span>
+            <span class="channel-status">Selected</span>
+          </div>
+          <div class="channel-icon">▣</div>
+          <h3>JobsGen</h3>
+          <p>Work shifts, hiring, side-income, and careers.</p>
+          <a href="jobsgen.html" class="channel-link selected-link">Open Channel →</a>
+        </div>
+
+        <div class="channel-card">
+          <div class="channel-top">
+            <span class="channel-badge">Explore</span>
+            <span class="channel-status">Live Concept</span>
+          </div>
+          <div class="channel-icon">✈</div>
+          <h3>TravelGen</h3>
+          <p>Movement, trips, planning, and destination ideas.</p>
+          <a href="#" class="channel-link">Add Channel →</a>
+        </div>
+
+        <div class="channel-card">
+          <div class="channel-top">
+            <span class="channel-badge">Explore</span>
+            <span class="channel-status">Live Concept</span>
+          </div>
+          <div class="channel-icon">◉</div>
+          <h3>CarsGen</h3>
+          <p>Mobility, ownership signals, and vehicle decisions.</p>
+          <a href="#" class="channel-link">Add Channel →</a>
+        </div>
+
+        <div class="channel-card selected-card">
+          <div class="selected-check">✓ Added</div>
+          <div class="channel-top">
+            <span class="channel-badge">Insight</span>
+            <span class="channel-status">Selected</span>
+          </div>
+          <div class="channel-icon">⚛</div>
+          <h3>ScienceGen</h3>
+          <p>Discovery, innovation, and public-interest science.</p>
+          <a href="#" class="channel-link selected-link">Channel Added →</a>
+        </div>
+
+        <div class="channel-card">
+          <div class="channel-top">
+            <span class="channel-badge">Lifestyle</span>
+            <span class="channel-status">Live Concept</span>
+          </div>
+          <div class="channel-icon">♪</div>
+          <h3>EntertainmentGen</h3>
+          <p>Streaming, shows, movies, music, and trend signals.</p>
+          <a href="#" class="channel-link">Add Channel →</a>
+        </div>
+
+        <div class="channel-card selected-card">
+          <div class="selected-check">✓ Added</div>
+          <div class="channel-top">
+            <span class="channel-badge">Lifestyle</span>
+            <span class="channel-status">Selected</span>
+          </div>
+          <div class="channel-icon">🛒</div>
+          <h3>ShoppingGen</h3>
+          <p>Deals, product discovery, and buying signals.</p>
+          <a href="#" class="channel-link selected-link">Channel Added →</a>
+        </div>
+
+        <div class="channel-card">
+          <div class="channel-top">
+            <span class="channel-badge">Lifestyle</span>
+            <span class="channel-status">Live Concept</span>
+          </div>
+          <div class="channel-icon">✦</div>
+          <h3>DiningGen</h3>
+          <p>Food trends, restaurants, and where-to-eat signals.</p>
+          <a href="#" class="channel-link">Add Channel →</a>
+        </div>
+
+        <div class="channel-card">
+          <div class="channel-top">
+            <span class="channel-badge">Insight</span>
+            <span class="channel-status">Live Concept</span>
+          </div>
+          <div class="channel-icon">▤</div>
+          <h3>PollingGen</h3>
+          <p>Public sentiment, issue movement, and opinion signals.</p>
+          <a href="#" class="channel-link">Add Channel →</a>
+        </div>
+
+        <div class="channel-card">
+          <div class="channel-top">
+            <span class="channel-badge">Verify</span>
+            <span class="channel-status">Live Concept</span>
+          </div>
+          <div class="channel-icon">◌</div>
+          <h3>FakeNewsGen</h3>
+          <p>Polygraph-style ratings on trending verified reports.</p>
+          <a href="#" class="channel-link">Add Channel →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="section alt-section">
+    <div class="container">
+      <h2>How It Works</h2>
+
+      <div class="three-col">
+        <div class="info-card">
+          <h3>1. Create One Free Profile</h3>
+          <p>Sign up once and use the same profile across the full SignalGen network.</p>
+        </div>
+
+        <div class="info-card">
+          <h3>2. Choose Your Channels</h3>
+          <p>Select the channels that match your interests, goals, and daily priorities.</p>
+        </div>
+
+        <div class="info-card">
+          <h3>3. Receive Custom Signals</h3>
+          <p>Get a personalized feed of updates, trends, tools, and opportunities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dashboard-preview" class="section">
+    <div class="container">
+      <h2>Dashboard Preview</h2>
+      <p class="section-intro">
+        A first look at how your signal feed could be organized.
+      </p>
+
+      <div class="widget-grid">
+        <div class="widget-card">
+          <div class="widget-top">
+            <h3>My Channels</h3>
+            <span class="widget-tag">4 Active</span>
+          </div>
+          <ul>
+            <li>RheoGen</li>
+            <li>JobsGen</li>
+            <li>ScienceGen</li>
+            <li>ShoppingGen</li>
+          </ul>
+        </div>
+
+        <div class="widget-card">
+          <div class="widget-top">
+            <h3>Today’s Signals</h3>
+            <span class="widget-tag">Updated</span>
+          </div>
+          <ul>
+            <li>Affordability trend update</li>
+            <li>New job market shift</li>
+            <li>Science headline gaining traction</li>
+            <li>Top shopping trend alert</li>
+          </ul>
+        </div>
+
+        <div class="widget-card">
+          <div class="widget-top">
+            <h3>Recommendation Engine</h3>
+            <span class="widget-tag">Next</span>
+          </div>
+          <ul>
+            <li>Add DiningGen</li>
+            <li>Follow EntertainmentGen</li>
+            <li>Save your dashboard preferences</li>
+            <li>Turn on future alerts</li>
+          </ul>
+        </div>
+
+        <div class="widget-card">
+          <div class="widget-top">
+            <h3>Signal Priority</h3>
+            <span class="widget-tag">Custom</span>
+          </div>
+          <ul>
+            <li>Core signals first</li>
+            <li>Shopping trend alerts second</li>
+            <li>Verification alerts enabled</li>
+            <li>Travel ideas muted for now</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-copy">
+          <p class="network-label">WHY SIGNALGEN</p>
+          <h2>One network for utility, lifestyle, trends, and verified movement.</h2>
+          <p>
+            SignalGen is built to help users cut through noise, follow the channels that matter,
+            and shape a more personalized information flow.
+          </p>
+        </div>
+        <div class="cta-actions">
+          <a href="#early-access" class="btn btn-light">Get Early Access</a>
+          <a href="#channels" class="btn btn-outline-light">Review Channels</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="featured" class="section alt-section">
+    <div class="container">
+      <h2>Featured Channels</h2>
+      <p class="section-intro">
+        A broader look at how each part of the network can serve a different type of user interest.
+      </p>
+
+      <div class="featured-grid">
+        <div class="featured-card">
+          <h3>RheoGen</h3>
+          <p>Signals around affordability, daily pressure, and economic reality.</p>
+        </div>
+
+        <div class="featured-card">
+          <h3>JobsGen</h3>
+          <p>Work, side-income, hiring shifts, and career movement.</p>
+        </div>
+
+        <div class="featured-card">
+          <h3>TravelGen</h3>
+          <p>Travel planning, movement, and destination opportunities.</p>
+        </div>
+
+        <div class="featured-card">
+          <h3>CarsGen</h3>
+          <p>Mobility signals, buying decisions, and ownership trends.</p>
+        </div>
+
+        <div class="featured-card">
+          <h3>ScienceGen</h3>
+          <p>Future-facing science, discovery, and public-interest innovation.</p>
+        </div>
+
+        <div class="featured-card">
+          <h3>EntertainmentGen</h3>
+          <p>Streaming, shows, movies, music, and trending entertainment signals.</p>
+        </div>
+
+        <div class="featured-card">
+          <h3>ShoppingGen</h3>
+          <p>Product discovery, deal flow, trend products, and buying signals.</p>
+        </div>
+
+        <div class="featured-card">
+          <h3>DiningGen</h3>
+          <p>Food, restaurant trends, local picks, and everyday dining signals.</p>
+        </div>
+
+        <div class="featured-card">
+          <h3>PollingGen</h3>
+          <p>Opinion, sentiment, and trend movement across public issues.</p>
+        </div>
+
+        <div class="featured-card">
+          <h3>FakeNewsGen</h3>
+          <p>Vets major verified trending news reports on a polygraph-style scale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section brand-system-section">
+    <div class="container">
+      <h2>Brand Direction</h2>
+      <p class="section-intro">
+        A first look at how the SignalGen visual identity can grow into a stronger brand system.
+      </p>
+
+      <div class="brand-system-grid">
+        <div class="brand-card">
+          <div class="brand-sample mark-sample">S</div>
+          <h3>Primary Mark</h3>
+          <p>Simple block mark for SignalGen that can later evolve into a more custom icon.</p>
+        </div>
+
+        <div class="brand-card">
+          <div class="brand-sample wordmark-sample">SignalGen</div>
+          <h3>Wordmark Direction</h3>
+          <p>Clean, modern, and flexible enough to sit above a full network of channels.</p>
+        </div>
+
+        <div class="brand-card">
+          <div class="brand-sample pulse-sample">
+            <span></span>
+          </div>
+          <h3>Signal Motif</h3>
+          <p>A visual cue for motion, flow, trends, alerts, and the idea of reading signals early.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="early-access" class="section early-access-section">
+    <div class="container">
+      <div class="early-access-box">
+        <div class="early-access-copy">
+          <p class="network-label dark-label">EARLY ACCESS</p>
+          <h2>Reserve your place in the SignalGen network.</h2>
+          <p>
+            Start with one free profile and be first in line as SignalGen grows into a larger
+            multi-channel system.
+          </p>
+        </div>
+
+        <form class="early-access-form">
+          <input type="text" placeholder="Your name" />
+          <input type="email" placeholder="Email address" />
+          <button type="submit" class="btn btn-solid">Join Early Access</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-brand">
+        <h3>SignalGen</h3>
+        <p>One network. One profile. Custom channels.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#channels">Channels</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#dashboard-preview">Dashboard</a>
+        <a href="#featured">Featured</a>
+        <a href="#early-access">Early Access</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
