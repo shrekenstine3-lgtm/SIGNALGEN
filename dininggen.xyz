@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DiningGen.xyz | Dining Signals, Food Trends, and Offer Logic</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">D</span>
+        <span class="brand-text">DiningGen.xyz</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="#overview">Overview</a>
+        <a href="#signals">Signals</a>
+        <a href="#modes">Dining Modes</a>
+        <a href="#future">Future Model</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html" class="btn btn-outline">Back to SignalGen.xyz</a>
+        <a href="#join" class="btn btn-solid">Join DiningGen.xyz</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <p class="eyebrow">DININGGEN.XYZ • FOOD • DINING • LOCAL OFFERS • RESTAURANT SIGNALS</p>
+      <h1>A channel for food trends, dining choices, and better restaurant value.</h1>
+      <p class="hero-text">
+        DiningGen.xyz is the SignalGen.xyz channel focused on food trends, restaurant choices,
+        local dining signals, group offers, and user-controlled dining preferences.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#signals" class="btn btn-solid">Explore Dining Signals</a>
+        <a href="#modes" class="btn btn-outline">View Dining Modes</a>
+      </div>
+
+      <div class="hero-panel">
+        <div class="hero-panel-grid">
+          <div class="hero-panel-card">
+            <h3>Dining Signals</h3>
+            <p>Track what kinds of food and restaurant patterns are actually gaining user attention and value.</p>
+          </div>
+          <div class="hero-panel-card">
+            <h3>Local + Offer Logic</h3>
+            <p>Surface dining opportunities, group offers, and restaurant value through cleaner user-first signals.</p>
+          </div>
+          <div class="hero-panel-card">
+            <h3>User-Curated Dining Feed</h3>
+            <p>Let users choose the dining modes, food interests, and offer categories they want saved in profile.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-strip">
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <h3>Food</h3>
+        <p>Track cuisine interest, food patterns, and what users are choosing</p>
+      </div>
+      <div class="stat-card">
+        <h3>Local</h3>
+        <p>See restaurant movement and local dining value through a cleaner lens</p>
+      </div>
+      <div class="stat-card">
+        <h3>Offers</h3>
+        <p>Support direct dining offers and future pooled group discounts</p>
+      </div>
+      <div class="stat-card">
+        <h3>Choice</h3>
+        <p>Let users tailor food and dining feeds to how they actually eat</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="overview" class="section">
+    <div class="container">
+      <h2>What DiningGen.xyz Covers</h2>
+      <p class="section-intro">
+        DiningGen.xyz is about food choice, value, and real dining behavior — not just restaurant listings.
+      </p>
+
+      <div class="three-col">
+        <div class="info-card">
+          <h3>Dining Signals</h3>
+          <p>See what kinds of restaurant and food experiences users are really moving toward.</p>
+        </div>
+        <div class="info-card">
+          <h3>Value + Access</h3>
+          <p>Spot where timing, offers, and dining pools can improve user value and access.</p>
+        </div>
+        <div class="info-card">
+          <h3>Preference Fit</h3>
+          <p>Let users shape the feed around cuisine, occasion, budget, and dining style.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="signals" class="section alt-section">
+    <div class="container">
+      <h2>Example DiningGen.xyz Signals</h2>
+      <p class="section-intro">
+        A first pass at the kinds of dining and restaurant signals this channel could surface.
+      </p>
+
+      <div class="widget-grid">
+        <div class="widget-card">
+          <div class="widget-top">
+            <h3>Dining Watch</h3>
+            <span class="widget-tag">Core</span>
+          </div>
+          <ul>
+            <li>Users shifting toward better-value dining choices</li>
+            <li>Casual and local options gaining loyalty under price pressure</li>
+            <li>Food trends spreading faster through visual and social signals</li>
+            <li>Convenience and quality both shaping repeat behavior</li>
+          </ul>
+        </div>
+
+        <div class="widget-card">
+          <div class="widget-top">
+            <h3>Food Lens</h3>
+            <span class="widget-tag">View</span>
+          </div>
+          <ul>
+            <li>What users choose repeatedly versus what only trends briefly</li>
+            <li>Dining is driven by budget, mood, location, and speed</li>
+            <li>Local signals may matter more than national noise</li>
+            <li>Offers work better when matched to habit and preference</li>
+          </ul>
+        </div>
+
+        <div class="widget-card">
+          <div class="widget-top">
+            <h3>Offer Layer</h3>
+            <span class="widget-tag">Insight</span>
+          </div>
+          <ul>
+            <li>Restaurant offers</li>
+            <li>Meal-value bundles</li>
+            <li>Group dining discounts</li>
+            <li>Future pooled dining offers</li>
+          </ul>
+        </div>
+
+        <div class="widget-card">
+          <div class="widget-top">
+            <h3>Future Tools</h3>
+            <span class="widget-tag">Build</span>
+          </div>
+          <ul>
+            <li>Dining preference dashboard</li>
+            <li>Cuisine-fit feed</li>
+            <li>Offer permission controls</li>
+            <li>Saved local dining map</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="modes" class="section">
+    <div class="container">
+      <h2>Dining Feed Modes</h2>
+      <p class="section-intro">
+        DiningGen.xyz can let users click the dining modes they want most, then store those choices in their secure Signal ID profile.
+      </p>
+
+      <div class="filter-row">
+        <span class="filter-pill active-pill">All Modes</span>
+        <span class="filter-pill">Local</span>
+        <span class="filter-pill">Budget</span>
+        <span class="filter-pill">Offers</span>
+        <span class="filter-pill">Cuisine</span>
+        <span class="filter-pill">Group</span>
+      </div>
+
+      <div class="channel-grid">
+        <div class="channel-card selected-card">
+          <div class="selected-check">✓ Selected</div>
+          <div class="channel-top">
+            <span class="channel-badge">Local</span>
+            <span class="channel-status">Feed On</span>
+          </div>
+          <div class="channel-icon">L</div>
+          <h3>Local Dining Feed</h3>
+          <p>Nearby restaurant movement, value, and repeat-worthy options shaped by local behavior.</p>
+          <a href="#" class="channel-link selected-link">Feed Selected →</a>
+        </div>
+
+        <div class="channel-card selected-card">
+          <div class="selected-check">✓ Selected</div>
+          <div class="channel-top">
+            <span class="channel-badge">Budget</span>
+            <span class="channel-status">Feed On</span>
+          </div>
+          <div class="channel-icon">$</div>
+          <h3>Budget Dining Feed</h3>
+          <p>Dining choices built around better value, practical spending, and reliable low-friction picks.</p>
+          <a href="#" class="channel-link selected-link">Feed Selected →</a>
+        </div>
+
+        <div class="channel-card">
+          <div class="channel-top">
+            <span class="channel-badge">Offers</span>
+            <span class="channel-status">Optional</span>
+          </div>
+          <div class="channel-icon">O</div>
+          <h3>Offers Feed</h3>
+          <p>Direct restaurant offers and future dining discounts users can choose to allow into the feed.</p>
+          <a href="#" class="channel-link">Add Feed →</a>
+        </div>
+
+        <div class="channel-card">
+          <div class="channel-top">
+            <span class="channel-badge">Cuisine</span>
+            <span class="channel-status">Optional</span>
+          </div>
+          <div class="channel-icon">C</div>
+          <h3>Cuisine Feed</h3>
+          <p>Food-style preferences, restaurant categories, and cuisine-first discovery signals.</p>
+          <a href="#" class="channel-link">Add Feed →</a>
+        </div>
+
+        <div class="channel-card selected-card">
+          <div class="selected-check">✓ Selected</div>
+          <div class="channel-top">
+            <span class="channel-badge">Group</span>
+            <span class="channel-status">Feed On</span>
+          </div>
+          <div class="channel-icon">G</div>
+          <h3>Group Dining Feed</h3>
+          <p>Dining signals shaped around shared meals, social outings, and future pooled value logic.</p>
+          <a href="#" class="channel-link selected-link">Feed Selected →</a>
+        </div>
+
+        <div class="channel-card">
+          <div class="channel-top">
+            <span class="channel-badge">Fast</span>
+            <span class="channel-status">Optional</span>
+          </div>
+          <div class="channel-icon">F</div>
+          <h3>Fast Choice Feed</h3>
+          <p>Quick, useful dining options for people optimizing around time, location, and convenience.</p>
+          <a href="#" class="channel-link">Add Feed →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section signal-profile-section">
+    <div class="container">
+      <h2>Dining Feed Saved to Signal ID</h2>
+      <p class="section-intro">
+        Each dining mode and food preference can attach to the user’s secure profile so DiningGen.xyz only shows the feeds they want.
+      </p>
+
+      <div class="profile-system-box">
+        <div class="profile-system-copy">
+          <p class="network-label">DININGGEN.XYZ PROFILE LAYER</p>
+          <h3>Your dining mix becomes part of your secure custom feed.</h3>
+          <p>
+            DiningGen.xyz can map cuisine preferences, local dining habits, offer permissions, and group-value interest
+            into a secure Signal ID, giving users a more useful dining dashboard.
+          </p>
+        </div>
+
+        <div class="profile-system-code">
+          <div class="code-card">
+            <h4>Signal ID</h4>
+            <p>SG-10482-X</p>
+          </div>
+          <div class="code-card">
+            <h4>Channel</h4>
+            <p>DININGGEN.XYZ</p>
+          </div>
+          <div class="code-card">
+            <h4>Dining Mix</h4>
+            <p>LOCAL / BUDGET / GROUP</p>
+          </div>
+          <div class="code-card">
+            <h4>Offer Mode</h4>
+            <p>DINING / VALUE / USER-CONTROLLED</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="future" class="section cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-copy">
+          <p class="network-label">FUTURE DININGGEN.XYZ MODEL</p>
+          <h2>User-curated dining feeds, restaurant signals, direct offers, and group-value logic.</h2>
+          <p>
+            DiningGen.xyz can grow into a personalized food and dining dashboard where users shape what they see,
+            allow the offers they want, and eventually join pooled dining value systems.
+          </p>
+        </div>
+        <div class="cta-actions">
+          <a href="#join" class="btn btn-light">Join DiningGen.xyz</a>
+          <a href="index.html" class="btn btn-outline-light">Back to SignalGen.xyz</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="join" class="section early-access-section">
+    <div class="container">
+      <div class="early-access-box">
+        <div class="early-access-copy">
+          <p class="network-label dark-label">JOIN DININGGEN.XYZ</p>
+          <h2>Get early access to the DiningGen.xyz channel.</h2>
+          <p>
+            Follow the development of DiningGen.xyz as a user-controlled dining, food, and restaurant value channel inside the SignalGen.xyz network.
+          </p>
+        </div>
+
+        <form class="early-access-form">
+          <input type="text" placeholder="Your name" />
+          <input type="email" placeholder="Email address" />
+          <button type="submit" class="btn btn-solid">Join DiningGen.xyz</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-brand">
+        <h3>DiningGen.xyz</h3>
+        <p>Dining signals, restaurant value, and user-controlled food offers inside the SignalGen.xyz network.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#overview">Overview</a>
+        <a href="#signals">Signals</a>
+        <a href="#modes">Dining Modes</a>
+        <a href="#future">Future Model</a>
+        <a href="index.html">Back to SignalGen.xyz</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
