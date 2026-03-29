@@ -519,6 +519,88 @@ body {
   margin-bottom: 10px;
 }
 
+.signal-profile-section {
+  background: #ffffff;
+}
+
+.profile-system-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.profile-step-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.profile-step-number {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #111827;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.profile-step-card h3 {
+  margin-bottom: 10px;
+}
+
+.profile-step-card p {
+  color: #4b5563;
+}
+
+.profile-system-box {
+  background: linear-gradient(135deg, #111827, #1f2937);
+  color: #fff;
+  border-radius: 22px;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 26px;
+}
+
+.profile-system-copy h3 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+.profile-system-copy p {
+  color: #d1d5db;
+}
+
+.profile-system-code {
+  display: grid;
+  gap: 14px;
+}
+
+.code-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.code-card h4 {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  color: #cbd5e1;
+  margin-bottom: 8px;
+}
+
+.code-card p {
+  font-weight: 700;
+  color: #ffffff;
+}
+
 .widget-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -622,54 +704,6 @@ body {
 
 .featured-card h3 {
   margin-bottom: 10px;
-}
-
-.network-section {
-  background: #f3f4f6;
-}
-
-.network-box {
-  background: #111;
-  color: #fff;
-  border-radius: 18px;
-  padding: 34px;
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 28px;
-}
-
-.network-label {
-  font-size: 0.82rem;
-  letter-spacing: 2px;
-  color: #cbd5e1;
-  margin-bottom: 12px;
-  font-weight: 700;
-}
-
-.dark-label {
-  color: #6b7280;
-}
-
-.network-copy h2 {
-  text-align: left;
-  margin-bottom: 14px;
-}
-
-.network-copy p {
-  color: #d1d5db;
-}
-
-.network-points {
-  display: grid;
-  gap: 14px;
-}
-
-.network-point {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 12px;
-  padding: 16px;
-  font-weight: 600;
 }
 
 .brand-system-section {
@@ -836,8 +870,8 @@ body {
 }
 
 @media (max-width: 900px) {
-  .network-box,
-  .early-access-box {
+  .early-access-box,
+  .profile-system-box {
     grid-template-columns: 1fr;
   }
 }
