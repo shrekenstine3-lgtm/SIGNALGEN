@@ -157,6 +157,10 @@ body {
   text-align: center;
 }
 
+.rheo-hero {
+  background: linear-gradient(to bottom, #ffffff, #edf4ff);
+}
+
 .eyebrow {
   font-size: 0.85rem;
   font-weight: 700;
