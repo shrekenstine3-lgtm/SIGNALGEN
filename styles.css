@@ -438,8 +438,8 @@ body {
 
 .selected-check {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 14px;
+  right: 14px;
   background: #0f1d3b;
   color: #fff;
   font-size: 0.82rem;
