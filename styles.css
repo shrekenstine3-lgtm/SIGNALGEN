@@ -151,6 +151,37 @@ body {
   color: #111;
 }
 
+.coin-token-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 170px;
+  min-height: 170px;
+  padding: 22px;
+  border-radius: 50%;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #2b1d00;
+  background: radial-gradient(circle at 30% 30%, #fff3b0 0%, #f7d55a 28%, #d6a81d 62%, #a97808 100%);
+  border: 6px solid #f4e08b;
+  box-shadow:
+    inset 0 3px 8px rgba(255, 255, 255, 0.5),
+    inset 0 -6px 10px rgba(0, 0, 0, 0.18),
+    0 10px 24px rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.coin-token-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow:
+    inset 0 3px 8px rgba(255, 255, 255, 0.55),
+    inset 0 -6px 10px rgba(0, 0, 0, 0.2),
+    0 14px 30px rgba(0, 0, 0, 0.22);
+}
+
 .hero {
   background: linear-gradient(to bottom, #ffffff, #eef2f7);
   padding: 110px 0 90px;
@@ -681,6 +712,7 @@ body {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .featured-grid {
@@ -870,8 +902,8 @@ body {
 }
 
 @media (max-width: 900px) {
-  .early-access-box,
-  .profile-system-box {
+  .profile-system-box,
+  .early-access-box {
     grid-template-columns: 1fr;
   }
 }
@@ -909,5 +941,11 @@ body {
   .footer-wrap {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .coin-token-btn {
+    min-width: 140px;
+    min-height: 140px;
+    font-size: 0.92rem;
   }
 }
